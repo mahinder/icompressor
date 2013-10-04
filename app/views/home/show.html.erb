@@ -1,0 +1,7 @@
+<% if @user %>
+	<b><%= @user.name %></b>
+	<br />
+	<%= image_tag @user.avtar.url(:original) %>
+<% else %>
+	No Record Found
+<% end %>

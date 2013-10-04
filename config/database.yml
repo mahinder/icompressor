@@ -1,0 +1,18 @@
+development: &BASE
+  adapter: mysql2
+  database: icompressor_dev
+  username: root
+  password: redhat
+  host: 127.0.0.1
+  timeout: 5000
+
+test: &test
+  <<: *BASE
+  database: icompressor_test
+
+production:
+  <<: *BASE
+  database: icompressor_production
+
+cucumber:
+  <<: *test

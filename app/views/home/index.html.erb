@@ -1,0 +1,7 @@
+<%= form_tag '/upload', :multipart => true do %>
+  <%= text_field_tag :name %>
+  <br />
+  <%= file_field_tag :avtar %>
+  <br />
+  <%= submit_tag 'Upload' %>
+<% end %>
